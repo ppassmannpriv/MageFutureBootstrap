@@ -7,9 +7,9 @@ module.exports = {
         },
         files: [{
             expand: true,
-            cwd: 'src/styles',
+            cwd: 'html/skin/frontend/future/default/scss/',
             src: ['*.scss'],
-            dest: 'dist/styles',
+            dest: 'html/skin/frontend/future/default/css/',
             ext: '.css'
         }]
     },
@@ -21,9 +21,9 @@ module.exports = {
         },
         files: [{
             expand: true,
-            cwd: 'src/styles',
+            cwd: 'html/skin/frontend/future/default/scss/',
             src: ['*.scss'],
-            dest: 'dist/styles',
+            dest: 'html/skin/frontend/future/default/css/',
             ext: '.css'
         }]
     }

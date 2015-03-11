@@ -1,0 +1,17 @@
+/* BASIC STUFF */
+
+
+/* FONT VARIABLES */
+$fontstack: Helvetic, Arial, sans-serif;
+$mainFontFolor: #333;
+
+/* BACKGROUNDS */
+$mainBackground: #fefefe;
+
+body { font-size: 16px; line-height: 1.25em; font-family: $fontstack; background: $mainBackground; }
+
+/* LARGE DESKTOPS - >= 1440px */
+@media(min-width: 1440px)
+{
+	.container { width: 1440px; }
+}

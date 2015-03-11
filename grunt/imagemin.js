@@ -2,9 +2,9 @@ module.exports = {
     all: {
         files: [{
             expand: true,
-            cwd: 'src/',
+            cwd: 'html/skin/frontend/future/default/',
             src: ['images/*.{png,jpg,gif}'],
-            dest: 'dist/'
+            dest: 'images/prod/'
         }]
     }
 };
