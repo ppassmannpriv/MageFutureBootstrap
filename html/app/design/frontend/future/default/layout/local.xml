@@ -27,7 +27,9 @@
 			<action method="addItem"><type>skin_css</type><name>css/styles.css</name></action>
 			
 			<!-- JS Add -->
-			<action method="addItem"><type>skin_js</type><name>scripts/prod/vendor/boostrap.min.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>scripts/prod/vendor/jquery-1_11_3.min.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>scripts/prod/noconflict.min.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>scripts/prod/vendor/bootstrap.min.js</name></action>
 		</reference>
 	</default>
 </layout>
