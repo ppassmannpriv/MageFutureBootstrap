@@ -1,0 +1,78 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2006-2014 X.commerce, Inc. (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+ $messages = $this->getMessagesBlock()->toHtml();
+ $hello = $this->getChildHtml('hello');
+ $top = $this->getChildHtml('top');
+ $customerAccountDashboardExtra = $this->getChildHtml('customer.account.dashboard.extra');
+ $info = $this->getChildHtml('info');
+ $address = $this->getChildHtml('address');
+ $info1 = $this->getChildHtml('info1');
+ $info2 = $this->getChildHtml('info2');
+?>
+<div class="page-title row">
+	<h1 class="col-md-12"><?php echo $this->__('My Dashboard') ?></h1>
+</div>
+<div class="dashboard row">
+	<?php if($messages): ?>
+		<div class="col-md-12">
+		    <?php echo $messages ?>
+		</div>
+	<?php endif; ?>
+	<?php if($hello): ?>
+		<div class="col-md-12">
+			<?php echo $hello; ?>
+		</div>
+	<?php endif; ?>
+	<?php if($top): ?>
+		<div class="col-md-12">
+		    <?php echo $top; ?>
+		</div>
+	<?php endif; ?>
+	<div class="box-head col-md-12">
+		<h2><?php echo $this->__('Account Information') ?></h2>
+	</div>
+    <div class="box-account box-info">
+		<?php if($customerAccountDashboardExtra): ?>
+			<div class="col-sm-12">
+		        <?php echo $customerAccountDashboardExtra; ?>
+			</div>
+		<?php endif; ?>
+
+		<?php if($info): ?>
+			<div class="col-sm-12">
+		        <?php echo $info; ?>
+			</div>
+		<?php endif; ?>
+
+		<?php if($address): ?>
+			<div class="col-md-12">
+		        <?php echo $address; ?>
+			</div>
+		<?php endif; ?>
+    </div>
+    <?php echo $info1; ?>
+    <?php echo $info2; ?>
+</div>

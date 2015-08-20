@@ -17,11 +17,11 @@
         <div class="container main-container col3-layout">
             <div class="main">
                 <?php echo $this->getChildHtml('breadcrumbs') ?>
+                <div class="col-md-3 col-left sidebar"><?php echo $this->getChildHtml('left') ?></div>
 				<div class="col-md-6 col-main">
                 	<?php echo $this->getChildHtml('global_messages') ?>
                     <?php echo $this->getChildHtml('content') ?>
                 </div>
-                <div class="col-md-3 col-left sidebar"><?php echo $this->getChildHtml('left') ?></div>
                 <div class="col-md-3 col-right sidebar"><?php echo $this->getChildHtml('right') ?></div>
             </div>
         </div>

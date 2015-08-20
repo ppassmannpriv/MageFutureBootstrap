@@ -32,4 +32,10 @@
 			<action method="addItem"><type>skin_js</type><name>scripts/prod/vendor/bootstrap.min.js</name></action>
 		</reference>
 	</default>
+
+	<customer_account>
+		<reference name="my.account.wrapper">
+			<action method="setElementClass"><value>my-account row</value></action>
+		</reference>
+	</customer_account>
 </layout>
